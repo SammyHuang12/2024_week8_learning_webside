@@ -1,0 +1,67 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color:inherit;
+    display: inline-block;
+    // display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.02em;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p{
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+main{
+    margin-top: 152px;
+    @include pad(){
+        margin-top: 64px;
+    }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale{
+    width: 101px;
+    background: $alert-10;
+    color:$alert-100;
+    padding:8px 12px 8px 12px;
+    border-radius: 100px;
+    font-weight: 600;
+
+    &-sm{
+        text-align: center;
+        letter-spacing: -1;
+        @include sm-mobile(){
+            width: 44px;
+            padding:4px 8px 4px 8px;
+        }
+    }
+}
+

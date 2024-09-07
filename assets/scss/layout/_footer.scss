@@ -1,0 +1,18 @@
+.footer{
+    border-radius:80px  80px  0px  0px;
+
+	@include pad(){
+		border-radius:48px  48px  0px  0px;
+	}
+	
+	line-height: 18px;
+	.logo{
+		max-width: 200px;
+		width: 100%;
+	}
+
+	a{
+		line-height: 20px;
+	}
+
+}

@@ -1,0 +1,12 @@
+.slogan{
+    .line{
+        max-width: 438px;
+    }
+    justify-content: end;
+}
+
+.card-icon{
+    @include mobile(){
+        max-width: 272px;
+    }
+}

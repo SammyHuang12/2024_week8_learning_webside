@@ -1,0 +1,205 @@
+.course{
+    &-header{
+        height: 370px;
+
+        background: url('../images/deco/polygon-2.png') no-repeat 8% 80px,
+                    url('../images/deco/polygon-2.png') no-repeat 78% 40px ,
+                    url('../images/deco/flower-2.png') no-repeat -5% 30%,
+                    url('../images/deco/flower-2.png') no-repeat 98% -55% ,
+                    $neutral-10;
+        
+        @include pad(){
+            background: url('../images/deco/polygon-2.png') no-repeat 8% 40px,
+            url('../images/deco/flower-2.png') no-repeat  98% center / contain,
+            $neutral-10;
+        }
+
+        @include mobile(){
+            height: 246px;
+        }
+
+        .swiper-next{
+            background: $primary-10;
+            margin-left: 16px;
+            &:hover{
+                background: $white;
+            }
+        }
+    }
+
+    &-btn.active{
+        background: $primary-100;
+        color:$white;
+    }        
+
+    &-btn{
+        color:$neutral-80;
+        background: $white;
+        border: 1px solid $white;
+        &:hover{
+            background-color: $primary-100;
+            border: 1px solid $primary-100;
+            color:white;
+        }
+    }
+
+    &-btn:hover {
+        color: #fff;
+        background-color: $primary-100;
+        border-color: $primary-100;
+    }
+
+    .hot{
+        .nav-tabs{
+            border:unset;
+        }
+
+        .nav-link{
+            margin-bottom: 0;
+            position: relative;
+             &:hover{
+                border:unset;
+                &:after{
+                    position: absolute;
+                    content:"";
+                    width:32px;
+                    height: 4px;
+                    border-radius: 100px;
+                    background: $primary-100;
+                    bottom:0;
+                    @include x-center;
+                }
+            }
+        }
+       
+        .nav-link.active{
+            border-bottom:1px solid $neutral-40;
+            background-color:unset;
+            position: relative;
+
+            &:after{
+                position: absolute;
+                content:"";
+                width:32px;
+                height: 4px;
+                border-radius: 100px;
+                background: $primary-100;
+                bottom:0;
+                @include x-center;
+            }
+        }
+
+        .swiper-prev, .swiper-next{
+            background: $white;
+            &:hover{
+                background: $primary-100;
+                color:$white;
+            }
+        }
+
+        .swiper-btn{
+            color:$neutral-60;
+            &:hover{
+                color:$primary-100;
+            }
+        }
+
+       
+        .topics{
+            width: 196px;
+            border:1px solid $neutral-40;
+            background: $white;               
+            & h6{
+                color: $black;                
+            }
+
+            &:hover{
+                color: $white;
+                background: $neutral-80;  
+                & h6{
+                    color: $white;                
+                }               
+            }            
+        }
+
+        .point{
+            width: 8px;
+            height: 8px;
+            border-radius: 100px;
+            background: #ECECEC;
+            &:hover{
+                   background: $primary-100;
+            }
+        }
+
+        .point.active{
+            width: 24px;
+            height: 8px;
+            border-radius: 50px;
+            background: $primary-100;
+        }        
+    }
+
+
+    &-b-line{
+        position: relative;
+
+        &::before{
+            content:"";
+            position: absolute;
+            background: $neutral-40;
+            width: 1px;
+            height: 32px;
+            top: 50%;
+            left: 0;
+            @include y-center;
+        }
+    }
+
+    .popular{
+        .card{
+            border-radius: 20px;
+            box-shadow: 0px 25px 50px -12px #0000001F;
+            padding: 0;
+            border:unset;
+            @include sm-mobile(){
+                border-radius: unset;
+                box-shadow: unset;
+                padding-bottom: 24px;
+                border-bottom:1px solid $neutral-40;
+            }
+
+            .card-img-top{
+              @include sm-mobile(){
+                  border-radius: 12px;
+                  // width: 100%;
+                  width: 100px;
+                  height: 100px;
+                }            
+            }
+        }
+    }
+}
+
+.pagination{
+    .page-item {
+       .page-link{
+            border-radius: 8px;
+            width: 48px;
+            height: 48px;
+            padding: 12px 0;
+            text-align: center;
+
+            @include mobile(){
+                width: 32px;
+                height: 32px;
+                padding: 4px 0;
+            }
+
+            &:hover{
+                background: $primary-100;
+                color: white;
+            }
+        } 
+    }
+}
