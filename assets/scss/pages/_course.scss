@@ -1,5 +1,5 @@
 .course{
-    &-header{
+    .header{
         height: 370px;
 
         background: url('../images/deco/polygon-2.png') no-repeat 8% 80px,
@@ -18,12 +18,51 @@
             height: 246px;
         }
 
-        .swiper-next{
-            background: $primary-10;
-            margin-left: 16px;
-            &:hover{
-                background: $white;
+        .swiper-button-next{
+            &:after {           
+                content: "\e5cc";
+                font-family: "Material Symbols Outlined";
+                background: $primary-10;
+                padding: 13px;
+                font-size: 24px;
             }
+            
+            @include pad(){
+                display: none;
+            }
+        }             
+
+        .swiper-button-prev{
+            &:after {
+                content: "\e5cb";
+                font-family: "Material Symbols Outlined";
+                background: $primary-10;
+                padding: 13px;
+                font-size: 24px; 
+            }
+
+            @include pad(){
+                display: none;
+            }         
+        }
+
+        .swiper-button-prev.swiper-button-disabled,
+        .swiper-button-next.swiper-button-disabled {
+            display: none;
+        }
+
+        .swiper-scrollbar{
+            bottom: -8px;
+            height: 8px;
+            transition: scrollbar-color 0.5s;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease;            
+        }
+
+        .swiper:hover+.swiper-scrollbar {
+            opacity: 0.5;
+            visibility: visible;
         }
     }
 
@@ -35,7 +74,8 @@
     &-btn{
         color:$neutral-80;
         background: $white;
-        border: 1px solid $white;
+        border: 1px solid $neutral-40;
+        font-weight: normal;
         &:hover{
             background-color: $primary-100;
             border: 1px solid $primary-100;
@@ -43,10 +83,8 @@
         }
     }
 
-    &-btn:hover {
-        color: #fff;
-        background-color: $primary-100;
-        border-color: $primary-100;
+    .nav-link.active{
+        font-weight: $font-weight-bold;
     }
 
     .hot{
@@ -57,7 +95,7 @@
         .nav-link{
             margin-bottom: 0;
             position: relative;
-             &:hover{
+            &:hover{
                 border:unset;
                 &:after{
                     position: absolute;
@@ -91,6 +129,7 @@
 
         .swiper-prev, .swiper-next{
             background: $white;
+            color: $primary-100;
             &:hover{
                 background: $primary-100;
                 color:$white;
@@ -104,7 +143,19 @@
             }
         }
 
-       
+        .swiper-slide{
+            width:306px;
+        
+            // .card{                
+            //     position: relative;
+
+            //     &:after{
+            //         content:"";
+            //         position: absolute;
+            //         box-shadow: var(--bs-box-shadow);
+            //     }
+            // }
+        }
         .topics{
             width: 196px;
             border:1px solid $neutral-40;
@@ -122,6 +173,24 @@
             }            
         }
 
+        .swiper-pagination{
+            bottom:0;
+        
+            &-bullet-active{
+                width: 24px;
+                border-radius: 50px;
+                background: $primary-100;
+                bottom:0;
+            }
+
+            span{
+                vertical-align: bottom;
+            }
+
+            @include pad(){
+                display: none;
+            }    
+        }
         .point{
             width: 8px;
             height: 8px;

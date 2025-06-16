@@ -11,7 +11,8 @@
 <body>
 	<%- include('./layout/header'); -%>
 		<main class="course">
-			<header class="course-header">
+			<!-- header -->
+			<header class="header d-flex flex-column justify-content-center">
 				<div class="container py-40 py-lg-80">
 					<nav aria-label="breadcrumb mb-16">
 						<ol class="breadcrumb">
@@ -19,37 +20,44 @@
 							<li class="breadcrumb-item active" aria-current="page"> 程式課程 </li>
 						</ol>
 					</nav>
-					<h1 class="text-black mt-16 mb-40 my-lg-40 fs-3 fs-lg-1">程式課程</h1>				
-						<div class="d-flex flex-wrap gap-8 position-relative">						
-							<button type="button" class="btn btn-sm course-btn active">所有程式</button>
-							<button type="button" class="btn btn-sm course-btn">網頁開發</button>
-							<button type="button" class="btn btn-sm course-btn">資料科學</button>
-							<button type="button" class="btn btn-sm course-btn d-none d-md-block">行動版開發</button>
-							<button type="button" class="btn btn-sm course-btn d-none d-md-block">程式語言</button>
-							<button type="button" class="btn btn-sm course-btn d-none d-lg-block">遊戲開發</button>
-							<button type="button"
-								class="btn btn-sm course-btn d-none d-lg-block">資料庫設計與開發</button>
-							<button type="button" class="btn btn-sm course-btn d-none d-lg-block">軟體測試</button>
-							<button type="button" class="btn btn-sm course-btn d-none d-lg-block">軟體開發工具</button>
-							<button type="button" class="btn btn-sm course-btn d-none d-lg-block">無程式碼開發</button>
-							<!-- <button type="button" class="btn btn-sm course-btn">無程式碼開發</button> -->
-							<button type="button"
-							class="d-none d-md-block btn p-12 border-0 swiper-next position-absolute top-50 end-0 translate-middle-y"><span class="material-symbols-outlined  align-bottom">
-								chevron_right
-								</span></button>
-						</div>				
+					<h1 class="text-black mt-16 mb-40 my-lg-40 fs-3 fs-lg-1 fw-bolder">程式課程</h1>
+					<div class="position-relative">					
+						<div class="swiper course-header-swiper">
+							<ul class="swiper-wrapper list-unstyled">
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn active">所有程式</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">網頁開發</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">資料科學</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">行動版開發</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">程式語言</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">遊戲開發</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">資料庫設計與開發</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">軟體測試</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">軟體開發工具</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">無程式碼開發</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">無程式碼開發</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">軟體測試</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">軟體開發工具</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">無程式碼開發</a></li>
+								<li class="swiper-slide w-auto"><a href="#" class="btn btn-sm course-btn ">無程式碼開發</a></li>
+							</ul>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>						
+						</div>
+						<div class="swiper-scrollbar"></div>
+					</div>
 				</div>
 			</header>
+			<!-- hot -->
 			<section class="hot container py-40 pt-lg-40 pb-lg-80">
 				<nav>
-					<div class="nav nav-tabs border-bottom" id="nav-tab" role="tablist">
-						<button class="nav-link border-0 px-12 py-16 py-lg-16 active" id="nav-hot-tab"
+					<div class="nav nav-tabs border-bottom column-gap-16" id="nav-tab" role="tablist">
+						<button class="nav-link border-0 px-8 py-16 active" id="nav-hot-tab"
 							data-bs-toggle="tab" data-bs-target="#nav-hot" type="button" role="tab"
 							aria-controls="nav-hot" aria-selected="true">最熱門</button>
-						<button class="nav-link border-0 px-12 py-16 py-lg-16" id="nav-new-class-tab"
+						<button class="nav-link border-0 px-8 py-16 " id="nav-new-class-tab"
 							data-bs-toggle="tab" data-bs-target="#nav-new-class" type="button" role="tab"
 							aria-controls="nav-new-class" aria-selected="false">最新課程</button>
-						<button class="nav-link border-0 px-12 py-16 py-lg-16" id="nav-topic-tab" data-bs-toggle="tab"
+						<button class="nav-link border-0 px-8 py-16 " id="nav-topic-tab" data-bs-toggle="tab"
 							data-bs-target="#nav-topic" type="button" role="tab" aria-controls="nav-topic"
 							aria-selected="false">話題最高</button>
 					</div>
@@ -57,8 +65,9 @@
 				<div class="tab-content my-40 my-lg-80" id="nav-tabContent">
 					<div class="tab-pane fade show position-relative active" id="nav-hot" role="tabpanel"
 						aria-labelledby="nav-hot-tab">
-						<div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-md-12 gy-lg-0">
-							<div class="col">
+						<div class="swiper course-hot-swiper ">						
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
 								<div class="card p-0 shadow position-relative rounded-20 border-0 overflow-hidden mb-0">
 									<span class="sale fs-14 position-absolute m-16">限時 8 折🔥</span>
 									<img src="../assets/images/course-5.png" class="card-img-top h-100" alt="course">
@@ -94,7 +103,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col d-none d-sm-block">
+							<div class="swiper-slide">
 								<div class="card p-0 shadow position-relative rounded-20 border-0 overflow-hidden mb-0">
 									<span class="sale fs-14 position-absolute m-16">限時 8 折🔥</span>
 									<img src="../assets/images/course-6.png" class="card-img-top h-100" alt="course">
@@ -130,7 +139,113 @@
 									</div>
 								</div>
 							</div>
-							<div class="col d-none d-md-block">
+							<div class="swiper-slide">
+								<div class="card p-0 shadow position-relative rounded-20 border-0 overflow-hidden mb-0">
+									<img src="../assets/images/course-7.png" class="card-img-top" alt="course">
+									<div class="card-body">
+										<h6 class="card-title mb-16 text-black">HTML & CSS 網頁設計基礎教程</h6>
+										<div class="d-flex">
+											<div class="d-flex align-items-center me-auto">
+												<div class="flex-shrink-0">
+													<img src="../assets/images/avatar-2.png" alt="avatar logo"
+														class="rounded-circle object-fit-cover">
+												</div>
+												<div class="flex-grow-1 ms-8">
+													<p>Kelly Hsu</p>
+												</div>
+											</div>
+											<div class="d-flex flex-column align-items-end">
+												<span class="d-block fs-6 fw-bolder  text-primary-100">NT$ 2,480</span>
+												<small class="text-decoration-line-through fs-14 text-neutral-60">NT$
+													3,200</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-footer p-16 d-flex align-items-center bg-white">
+										<div class="me-auto">
+											<span
+												class="d-inline-block rounded-pill bg-neutral-40 px-12 py-4 fs-14">程式開發</span>
+											<p class="fs-14 mt-4">已有 420 位同學加入</p>
+										</div>
+										<p class="fs-14 text-black">
+											<i class="bi bi-star-fill text-warning me-4"></i>4.0
+											<span class="text-neutral-60">(333)</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card p-0 shadow position-relative rounded-20 border-0 overflow-hidden mb-0">
+									<img src="../assets/images/course-8.png" class="card-img-top h-100" alt="course">
+									<div class="card-body">
+										<h6 class="card-title mb-16 text-black">更進一步！深入學習 Node.js 與後端開發</h6>
+										<div class="d-flex">
+											<div class="d-flex align-items-center me-auto">
+												<div class="flex-shrink-0">
+													<img src="../assets/images/avatar-2.png" alt="avatar logo"
+														class="rounded-circle object-fit-cover">
+												</div>
+												<div class="flex-grow-1 ms-8">
+													<p>Kelly Hsu</p>
+												</div>
+											</div>
+											<div class="d-flex flex-column align-items-end">
+												<span class="d-block fs-6 fw-bolder  text-primary-100">NT$ 2,480</span>
+												<small class="text-decoration-line-through fs-14 text-neutral-60">NT$
+													3,200</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-footer p-16 d-flex align-items-center bg-white">
+										<div class="me-auto">
+											<span
+												class="d-inline-block rounded-pill bg-neutral-40 px-12 py-4 fs-14">程式開發</span>
+											<p class="fs-14 mt-4">已有 420 位同學加入</p>
+										</div>
+										<p class="fs-14 text-black">
+											<i class="bi bi-star-fill text-warning me-4"></i>4.0
+											<span class="text-neutral-60">(333)</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card p-0 shadow position-relative rounded-20 border-0 overflow-hidden mb-0">
+									<span class="sale fs-14 position-absolute m-16">限時 8 折🔥</span>
+									<img src="../assets/images/course-6.png" class="card-img-top h-100" alt="course">
+									<div class="card-body">
+										<h6 class="card-title mb-16 text-black">全面掌握 JavaScript 開發技術</h6>
+										<div class="d-flex">
+											<div class="d-flex align-items-center me-auto">
+												<div class="flex-shrink-0">
+													<img src="../assets/images/avatar-2.png" alt="avatar logo"
+														class="rounded-circle object-fit-cover">
+												</div>
+												<div class="flex-grow-1 ms-8">
+													<p>Kelly Hsu</p>
+												</div>
+											</div>
+											<div class="d-flex flex-column align-items-end">
+												<span class="d-block fs-6 fw-bolder  text-primary-100">NT$ 2,480</span>
+												<small class="text-decoration-line-through fs-14 text-neutral-60">NT$
+													3,200</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-footer p-16 d-flex align-items-center bg-white">
+										<div class="me-auto">
+											<span
+												class="d-inline-block rounded-pill bg-neutral-40 px-12 py-4 fs-14">程式開發</span>
+											<p class="fs-14 mt-4">已有 420 位同學加入</p>
+										</div>
+										<p class="fs-14 text-black">
+											<i class="bi bi-star-fill text-warning me-4"></i>4.0
+											<span class="text-neutral-60">(333)</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
 								<div class="card p-0 shadow position-relative rounded-20 border-0 overflow-hidden mb-0">
 									<img src="../assets/images/course-7.png" class="card-img-top h-100" alt="course">
 									<div class="card-body">
@@ -165,7 +280,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col d-none d-md-block">
+							<div class="swiper-slide">
 								<div class="card p-0 shadow position-relative rounded-20 border-0 overflow-hidden mb-0">
 									<img src="../assets/images/course-8.png" class="card-img-top h-100" alt="course">
 									<div class="card-body">
@@ -201,65 +316,75 @@
 								</div>
 							</div>
 						</div>
+
+						</div>
 						<button type="button"
-							class="d-none d-sm-block btn btn-white shadow p-16 border-0 swiper-prev position-absolute top-50 start-0 translate-middle"><span
-								class="material-symbols-outlined align-bottom ">arrow_back</span></button>
+							class="swiper-button-prev-hot d-none d-sm-block btn btn-white shadow p-16 border-0 swiper-prev position-absolute top-50 start-0 translate-middle z-3"><span
+								class="material-symbols-outlined align-bottom">arrow_back</span></button>
 						<button type="button"
-							class="d-none d-sm-block btn btn-white shadow p-16 border-0 swiper-next position-absolute top-50 start-100 translate-middle"><span
-								class="material-symbols-outlined align-bottom ">arrow_forward</span></button>
+							class="swiper-button-next-hot d-none d-sm-block btn btn-white shadow p-16 border-0 swiper-next position-absolute top-50 start-100 translate-middle z-3"><span
+								class="material-symbols-outlined align-bottom">arrow_forward</span></button>
 					</div>
 					<div class="tab-pane fade" id="nav-new-class" role="tabpanel" aria-labelledby="nav-new-class-tab">
 						最新課程page</div>
 					<div class="tab-pane fade" id="nav-topic" role="tabpanel" aria-labelledby="nav-topic-tab">話題最高page
 					</div>
 				</div>
+				<!-- 熱門主題 -->
 				<div class="popular-topics">
 					<div class="d-flex align-items-center">
 						<h3 class="text-black me-auto fs-6 fs-lg-3">熱門主題</h3>
 						<div class="d-flex gap-12">
-							<button type="button" class="swiper-btn p-8 border-0 bg-white"><span
+							<button type="button" class="swiper-button-prev-topics swiper-btn p-8 border-0 bg-white"><span
 									class="material-symbols-outlined align-bottom ">arrow_back</span></button>
-							<button type="button" class="swiper-btn p-8 border-0 bg-white"><span
+							<button type="button" class="swiper-button-next-topics swiper-btn p-8 border-0 bg-white"><span
 									class="material-symbols-outlined align-bottom ">arrow_forward</span></button>
 						</div>
 					</div>
-					<div class="d-flex gap-24 my-40">
-						<button type="button" class="topics btn py-24 rounded-12 ">
-							<h6 class=" mb-8">HTML 5</h6>
-							<p>2,103 個課程</p>
+					<div class="swiper course-topics-swiper">
+					<div class="swiper-wrapper mt-40 mb-0 mb-lg-48">
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12 ">
+							<h6 class=" mb-8">HTML 5</h6><p>2,103 個課程</p>
 						</button>
-						<button type="button" class="topics btn py-24 rounded-12 d-none d-md-block">
-							<h6 class=" mb-8">HTML 5</h6>
-							<p>2,103 個課程</p>
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12">
+							<h6 class=" mb-8">Javascript</h6><p>891 個課程</p>
 						</button>
-						<button type="button" class="topics btn py-24 rounded-12 d-none d-md-block">
-							<h6 class=" mb-8">HTML 5</h6>
-							<p>2,103 個課程</p>
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12">
+							<h6 class=" mb-8">Python</h6><p>1,384 個課程</p>
 						</button>
-						<button type="button" class="topics btn py-24 rounded-12 d-none d-md-block">
-							<h6 class=" mb-8">HTML 5</h6>
-							<p>2,103 個課程</p>
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12">
+							<h6 class=" mb-8">CSS 3</h6><p>240 個課程</p>
 						</button>
-						<button type="button" class="topics btn py-24 rounded-12 d-none d-md-block">
-							<h6 class=" mb-8">HTML 5</h6>
-							<p>2,103 個課程</p>
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12">
+							<h6 class=" mb-8">HTML 5</h6><p>2,103 個課程</p>
 						</button>
-						<button type="button" class="topics btn py-24 rounded-12 d-none d-lg-block">
-							<h6 class=" mb-8">HTML 5</h6>
-							<p>2,103 個課程</p>
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12">
+							<h6 class=" mb-8">HTML 5</h6><p>2,103 個課程</p>
+						</button>
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12 ">
+							<h6 class=" mb-8">HTML 5</h6><p>2,103 個課程</p>
+						</button>
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12">
+							<h6 class=" mb-8">Javascript</h6><p>891 個課程</p>
+						</button>
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12">
+							<h6 class=" mb-8">Python</h6><p>1,384 個課程</p>
+						</button>
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12">
+							<h6 class=" mb-8">CSS 3</h6><p>240 個課程</p>
+						</button>
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12">
+							<h6 class=" mb-8">HTML 5</h6><p>2,103 個課程</p>
+						</button>
+						<button type="button" class="swiper-slide topics btn py-24 rounded-12">
+							<h6 class=" mb-8">HTML 5</h6><p>2,103 個課程</p>
 						</button>
 					</div>
-					<div class=" d-none d-lg-block">
-						<ul class="list-unstyled d-flex gap-4 justify-content-center">
-							<li><a href="#" class="point active"></a></li>
-							<li><a href="#" class="point"></a></li>
-							<li><a href="#" class="point"></a></li>
-						</ul>
+					<div class="swiper-pagination"></div>					
 					</div>
-
 				</div>
-				
 			</section>
+			<!-- 程式頂尖講師 -->
 			<section class="bg-neutral-10">
 				<div class="container py-40 py-lg-80">
 					<h2 class="text-center fs-5 fs-lg-2 mb-40">程式頂尖講師</h2>
@@ -331,6 +456,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- 相關課程 -->
 			<section class="popular container pt-40 pb-80 py-lg-80 ">
 				<nav class="d-flex align-items-center flex-column flex-lg-row justify-content-center mb-40">
 					<h3 class="fs-16 fs-lg-3 text-black me-lg-auto mb-12 mb-lg-0">查看 520 筆與「<span
