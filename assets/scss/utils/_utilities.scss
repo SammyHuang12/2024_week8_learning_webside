@@ -7,7 +7,6 @@ $utilities: map-merge(
   	  	  	( responsive: true ),
   	  	),
 
-
   	  	"rounded": (
   	  	  	property: border-radius,
   	  	  	class: rounded,
@@ -73,6 +72,26 @@ $utilities: map-merge(
       		  100: 100%,
       		  auto: auto
       		)
-    	)
+    	),
+		// Gap utility
+		"gap": (
+		  responsive: true,
+		  property: gap,
+		  class: gap,
+		  values: $spacers
+		),
+		"row-gap": (
+		  responsive: true,
+		  property: row-gap,
+		  class: row-gap,
+		  values: $spacers
+		),
+		"column-gap": (
+		  responsive: true,
+		  property: column-gap,
+		  class: column-gap,
+		  values: $spacers
+		),
+		
   	)
 );
