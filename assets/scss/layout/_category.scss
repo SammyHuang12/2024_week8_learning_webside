@@ -1,12 +1,24 @@
-.slogan{
-    .line{
-        max-width: 438px;
-    }
-    justify-content: end;
-}
+.category{
+    max-width: 1656px;
 
-.card-icon{
-    @include mobile(){
-        max-width: 272px;
+    &-swiper {
+        .swiper-slide{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .slogan{
+        .line{
+            width: 438px;
+            height:94px;
+        }
+        justify-content: end;
+    }
+
+    .card-icon{
+        padding: 20px;
+        width: 306px;
     }
 }

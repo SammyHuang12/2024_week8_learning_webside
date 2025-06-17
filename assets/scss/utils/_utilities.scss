@@ -10,6 +10,7 @@ $utilities: map-merge(
   	  	"rounded": (
   	  	  	property: border-radius,
   	  	  	class: rounded,
+			responsive: true,
   	  	  	values: (
   	  	  	  	null: $border-radius,
   	  	  	  	 0: 0,
@@ -19,6 +20,7 @@ $utilities: map-merge(
 				12: 12px,
   	  	  	  	16: $border-radius-xl,		//16
   	  	  	  	20: 20px,					//20
+				40: 40px,
 				48: 48px,
   	  	  	  	80: 80px,
   	  	  	  	circle: 50%,

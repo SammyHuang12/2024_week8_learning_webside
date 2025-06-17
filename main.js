@@ -26,38 +26,17 @@ const courseHeaderSwiper = new Swiper(".course-header-swiper", {
 });
 
 const courseHotSwiper = new Swiper(".course-hot-swiper", {
-    // direction: 'horizontal',
-    // slidesGropu:3,
     slidesPerView: 'auto',
     spaceBetween: 24,
-    // loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    // },
+
     navigation: {
         nextEl: ".swiper-button-next-hot",
         prevEl: ".swiper-button-prev-hot",
-    },
-    breakpoints: {
-        375: {
-            // slidesPerView: 'auto',
-            // spaceBetween: 16,
-        },
-        // 576: {
-        //     //當螢幕寬度大於等於576
-        //     slidesPerView: 2,
-        //     // slidesPerView: 'auto',
-        // },
-        // 992: {
-        //     //當螢幕寬度大於等於992
-        //     slidesPerView: 4,
-        // },
     },
 
 });
 
 const courseTopicsSwiper = new Swiper(".course-topics-swiper", {
-    // direction: 'horizontal',
     slidesPerView: 'auto',
     spaceBetween: 24,
 
@@ -70,4 +49,29 @@ const courseTopicsSwiper = new Swiper(".course-topics-swiper", {
         el: ".swiper-pagination",
         clickable: true,
       },
+});
+
+const categorySwiper = new Swiper(".category-swiper", {
+    slidesPerView: 1.2, 
+    spaceBetween: 24,
+    grid: {
+      rows: 2, 
+      fill: "row"
+    },
+    breakpoints: {
+        375: {
+        slidesPerView: 1.2, 
+        grid: {
+          rows: 2,
+          fill: "row"
+        }
+      },
+        576: {
+          slidesPerView: 2, 
+          grid: {
+            rows: 4,
+            fill: "row"
+          }
+        }
+    }
 });
