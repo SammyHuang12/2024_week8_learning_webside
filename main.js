@@ -33,7 +33,6 @@ const courseHotSwiper = new Swiper(".course-hot-swiper", {
         nextEl: ".swiper-button-next-hot",
         prevEl: ".swiper-button-prev-hot",
     },
-
 });
 
 const courseTopicsSwiper = new Swiper(".course-topics-swiper", {
@@ -74,4 +73,9 @@ const categorySwiper = new Swiper(".category-swiper", {
           }
         }
     }
+});
+
+const classSwiper = new Swiper(".class-swiper", {
+    slidesPerView: 'auto',
+    spaceBetween: 24,
 });

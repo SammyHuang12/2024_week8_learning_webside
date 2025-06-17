@@ -45,6 +45,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    *::before{
+        position: absolute;
+        @include xy-center()
+    }
 }
 
 .sale{
@@ -65,3 +71,6 @@ main{
     }
 }
 
+// .container{
+//     outline: 1px solid green;
+// }
