@@ -670,8 +670,15 @@ $border-widths: (
   5: 5px
 ) !default;
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
-$border-color-translucent:    rgba($black, .175) !default;
+// $border-color:                $gray-300 !default;
+// $border-color-translucent:    rgba($black, .175) !default;
+
+//自訂
+$border-color:                $neutral-40 !default;
+$border-color-translucent:    $neutral-40 !default;
+//自訂 end 
+
+
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -764,7 +771,11 @@ $font-weight-base:            $font-weight-normal !default;
 
 $line-height-base:            1.5 !default;   //內文行高
 $line-height-sm:              1.25 !default;
-$line-height-lg:              2 !default;
+// $line-height-lg:              2 !default;
+
+//自訂
+$line-height-lg:              1.2 !default;
+//自訂 end
 
 // $h1-font-size:                $font-size-base * 2.5 !default;     //40
 // $h2-font-size:                $font-size-base * 2 !default;       //32
@@ -1096,12 +1107,7 @@ $input-disabled-bg:                     var(--#{$prefix}secondary-bg) !default;
 $input-disabled-border-color:           null !default;
 
 $input-color:                           var(--#{$prefix}body-color) !default;
-// $input-border-color:                    var(--#{$prefix}border-color) !default;
-
-//自訂
-$input-border-color:                    $neutral-40 !default;
-//end 自訂
-
+$input-border-color:                    var(--#{$prefix}border-color) !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      var(--#{$prefix}box-shadow-inset) !default;
 
