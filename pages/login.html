@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>登入 | Learning</title>
+</head>
+
+<body>
+	<main class="container-fluid login my-md-40 my-60">
+        <section class="row row-cols-1 row-cols-md-2 align-items-center">
+                <div class="col d-none d-md-block">
+                    <img src="../assets/images/login.png" alt="login" class="object-fit-cover d-block ps-40 h-100 w-100">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="row w-100">    
+                        <div class="col-12 col-xl-8 col-lg-10 m-auto d-grid row-gap-24 row-gap-md-40">                
+                            <h1 class="fs-3 fs-md-1 text-break text-black">歡迎回來！</h1>
+                            <div class="d-grid row-gap-16">
+                                <button type="submit" class="btn btn-white p-16 position-relative border-neutral-40 fw-normal d-block w-100"><img class="social-icon" src="../assets/images/icons/ic_google.png" alt="ic logo">使用 Google 帳號登入</button>
+                                <button type="submit" class="btn btn-white p-16 position-relative border-neutral-40 fw-normal d-block w-100"><img class="social-icon" src="../assets/images/icons/ic_facebook.png" alt="bg logo">使用 Facebook 帳號登入</button>
+                                <button type="submit" class="btn btn-white p-16 position-relative border-neutral-40 fw-normal d-block w-100"><img class="social-icon" src="../assets/images/icons/ic_apple.png" alt="apple logo">使用 Apple 帳號登入</button>
+                            </div>                    
+                            <form class="row">
+                                <p class="fw-bold mb-16">或使用 Learning 帳號登入</p>
+                                <div class="col-12 mb-16">
+                                    <label for="inputEmail" class="form-label">電子信箱<span class="text-alert-100 ms-4">*</span></label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="請輸入電子信箱">
+                                </div>
+                                <div class="col-12 mb-8">
+                                    <label for="inputPassword" class="form-label">密碼<span class="text-alert-100 ms-4">*</span></label>
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="請輸入密碼">
+                                    <img class="social-icon" src="../assets/images/icons/ic_google.png" alt="ic logo">
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center mb-24 mb-md-40">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">記住帳號</label>
+                                    </div>
+                                    <a href="#" class="ms-auto">忘記密碼？</a>                         
+                                </div>                
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-neutral-40 w-100">立即登入</button>
+                                </div>
+                            </form>                    
+                            <p class="mb-0 mb-md-16">沒有 Learning 帳號嗎？<a href="register.html" class="fw-bold text-primary-100 ms-8 text-decoration-underline link-offset-1">立即註冊</a></p>
+                        </div>
+                    </div>
+                </div>
+          
+        </section>
+	</main>
+	<script type="module" src="../main.js"></script>
+</body>
+
+</html>

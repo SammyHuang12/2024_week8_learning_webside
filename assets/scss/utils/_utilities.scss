@@ -106,5 +106,30 @@ $utilities: map-merge(
   			  	lg: $line-height-lg,
   			)	  	
 		),
+
+		"height": (
+    	  	property: height,
+    	  	class: h,
+    	  	responsive: true,
+    	  	values: (
+    	  	  	25vh: 25vh,
+    	  	  	50vh: 50vh,
+    	  	  	75vh: 75vh,
+				90vh: 90vh,
+    	  	  	100vh: 100vh
+    	  	)
+    	),
+
+		"object-fit": (
+  responsive: true,
+  property: object-fit,
+  values: (
+    contain: contain,
+    cover: cover,
+    fill: fill,
+    scale: scale-down,
+    none: none,
+  )
+),
   	)
 );
