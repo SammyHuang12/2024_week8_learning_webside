@@ -19,20 +19,24 @@
                         <div class="col-12 col-xl-8 col-lg-10 m-auto d-grid row-gap-24 row-gap-md-40">                
                             <h1 class="fs-3 fs-md-1 text-break text-black">歡迎回來！</h1>
                             <div class="d-grid row-gap-16">
-                                <button type="submit" class="btn btn-white p-16 position-relative border-neutral-40 fw-normal d-block w-100"><img class="social-icon" src="../assets/images/icons/ic_google.png" alt="ic logo">使用 Google 帳號登入</button>
-                                <button type="submit" class="btn btn-white p-16 position-relative border-neutral-40 fw-normal d-block w-100"><img class="social-icon" src="../assets/images/icons/ic_facebook.png" alt="bg logo">使用 Facebook 帳號登入</button>
-                                <button type="submit" class="btn btn-white p-16 position-relative border-neutral-40 fw-normal d-block w-100"><img class="social-icon" src="../assets/images/icons/ic_apple.png" alt="apple logo">使用 Apple 帳號登入</button>
+                                <button type="submit" class="btn btn-white p-16 position-relative border-neutral-40 fw-normal d-block w-100"><img class="icon-social" src="../assets/images/icons/ic_google.png" alt="ic logo">使用 Google 帳號登入</button>
+                                <button type="submit" class="btn btn-white p-16 position-relative border-neutral-40 fw-normal d-block w-100"><img class="icon-social" src="../assets/images/icons/ic_facebook.png" alt="bg logo">使用 Facebook 帳號登入</button>
+                                <button type="submit" class="btn btn-white p-16 position-relative border-neutral-40 fw-normal d-block w-100"><img class="icon-social" src="../assets/images/icons/ic_apple.png" alt="apple logo">使用 Apple 帳號登入</button>
                             </div>                    
                             <form class="row">
                                 <p class="fw-bold mb-16">或使用 Learning 帳號登入</p>
                                 <div class="col-12 mb-16">
                                     <label for="inputEmail" class="form-label">電子信箱<span class="text-alert-100 ms-4">*</span></label>
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="請輸入電子信箱">
+                                    <input type="email" class="form-control login-email" id="inputEmail" placeholder="請輸入電子信箱">
                                 </div>
                                 <div class="col-12 mb-8">
                                     <label for="inputPassword" class="form-label">密碼<span class="text-alert-100 ms-4">*</span></label>
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="請輸入密碼">
-                                    <img class="social-icon" src="../assets/images/icons/ic_google.png" alt="ic logo">
+                                    <div class="position-relative">
+                                        <input type="password" class="form-control login-password" id="inputPassword" placeholder="請輸入密碼">
+                                        <button id = "icon-eye" type="button" class="icon-eye ">
+                                        </button>                                    
+                                    </div>
+                                    
                                 </div>
                                 <div class="col-12 d-flex justify-content-between align-items-center mb-24 mb-md-40">
                                     <div class="form-check">
@@ -42,7 +46,7 @@
                                     <a href="#" class="ms-auto">忘記密碼？</a>                         
                                 </div>                
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-neutral-40 w-100">立即登入</button>
+                                    <button type="submit" class="btn btn-primary-100 w-100 border-0" disabled>立即登入</button>
                                 </div>
                             </form>                    
                             <p class="mb-0 mb-md-16">沒有 Learning 帳號嗎？<a href="register.html" class="fw-bold text-primary-100 ms-8 text-decoration-underline link-offset-1">立即註冊</a></p>

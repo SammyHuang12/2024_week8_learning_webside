@@ -1,10 +1,29 @@
-.login{
-    .social-icon{
-        position: absolute;
-        width: 24px;
-        height:24px;
-        left: 16px;
-    }
+.icon-social{
+    position: absolute;
+    width: 24px;
+    height:24px;
+    left: 16px;
+}
 
-    
+.icon-eye{
+    position: absolute;
+    width: 20px;
+    height:20px;
+    padding: 0;
+    border:none;
+   background-color: transparent;
+    right:18px;
+    @include y-center();
+}
+
+.icon-eye-open{
+    background: url('../images/icons/ic_eye-open.png') no-repeat center/cover ;    
+} 
+
+.icon-eye-close{
+    background: url('../images/icons/ic_eye_close.png') no-repeat center/cover;}
+
+.btn:disabled{
+    color:$neutral-60;
+    background: $neutral-40;
 }
