@@ -1,0 +1,1 @@
+console.log("login page");document.getElementById("inputPassword").addEventListener("input",n);function n(){var e=document.getElementById("inputPassword"),o=document.getElementById("icon-eye");e.value.length>0&&(console.log("ddd"),console.log(e.value.length),o.classList.add("icon-eye-close")),e.type="text",console.log(e)}
