@@ -1,3 +1,116 @@
-.index-title {
-  font-size: 100px;
+.top-course{
+	position: relative;
+	z-index: 0;
+
+	&::before{
+		position: absolute;
+		content:'';
+		background-image: url('../images/deco/flower-2.png');
+		width: 560px;
+		height: 560px;
+		top:0;
+		left:0;
+		transform: translatex(-50%);
+		z-index: -1;
+
+		@include pad(){
+			width: 200px;
+			height: 200px;
+			background-size: cover;
+
+		}
+	}
+
+	.tag{
+    
+    background: $primary-10;
+    color:$primary-100;
+    padding:8px 12px 8px 12px;
+    border-radius: 100px;
+    font-weight: 600;
+	letter-spacing: 0.02em;
+
+    &-sm{
+        text-align: center;
+        letter-spacing: -1;
+        @include sm-mobile(){
+            width: 44px;
+            padding:4px 8px 4px 8px;
+        }
+    }
+}
+	
+}
+.top-buy {
+
+	background: linear-gradient(to bottom, #F0F6FF, #FFFFFF);
+
+	.subject {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: '';
+			background-image: url('../images/deco/flower-3.png');
+			width: 480px;
+			height: 480px;
+			top: -40px;
+			left: -552px;
+		}
+	}
+}
+
+.text-flower {
+	position: relative;
+	z-index: 0;
+
+	&::before {
+		position: absolute;
+		content: '';
+		background-image: url('../images/deco/flower-1.png');
+		width: 60px;
+		height: 60px;
+		top: -24px;
+		left: -24px;
+		z-index: -1;
+	}
+}
+
+.top-teacher{
+	position: relative;
+	&::before{
+		position: absolute;
+		content:'';
+		background-image: url('../images/deco/line-1.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		top: 200px;
+		width: 100%;
+		height: 500px;
+
+		@include pad(){
+			display: none;
+		}
+	}
+	
+	
+	.card{
+		max-width: 416px;
+		@include pad(){
+			max-width: 351px;
+			img{
+				height: 356px;
+			}
+		}
+	}
+
+	.card-body{
+		width: 384px;
+		margin-top: -100px;
+		@include pad(){
+			width: 327px;
+			margin-top: -56px;
+		}
+	}
 }

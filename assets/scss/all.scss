@@ -16,10 +16,13 @@
 
 @import "./base/mixin";
 @import "./base/base";
+@import "./base/swiper";
 
 @import './layout/header';
 @import './layout/footer';
 @import './layout/category';
+
+@import './components/subject';
 
 
 @import './pages/index';

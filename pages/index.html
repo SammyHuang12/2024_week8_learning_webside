@@ -1,20 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>首頁 | Learning</title>
 </head>
+
 <body>
 	<%- include('./layout/header'); -%>
-		<main>
-			<div class="container">
-				<h3>製作ing...</h3>
-			</div>			
+		<main class="index">
+			<header>
+				<h2>banner</h2>
+			</header>
+			<!-- 火熱募資課程 -->
+			<section class="container py-80 py-md-120 top-course">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<h1 class="text-black fw-bolder mt-md-160">火熱募資課程</h1>
+						<p class="fs-6 fs-md-16 mb-24 mb-md-40">現在購買最優惠✨</p>
+						<ul
+							class="overflow-auto list-unstyled d-flex flex-nowrap flex-md-wrap mb-24 mb-md-40 gap-8 gap-md-12">
+							<li class="text-nowrap"><a href="#" class="btn btn-sm course-btn active">全部</a></li>
+							<li class="text-nowrap"><a href="#" class="btn btn-sm course-btn ">🍽️烹飪料理</a></li>
+							<li class="text-nowrap"><a href="#" class="btn btn-sm course-btn ">📊數據分析</a></li>
+							<li class="text-nowrap"><a href="#" class="btn btn-sm course-btn ">🎼音樂製作</a></li>
+							<li class="text-nowrap"><a href="#" class="btn btn-sm course-btn ">📝創意寫作</a></li>
+							<li class="text-nowrap"><a href="#" class="btn btn-sm course-btn ">💬語言學習</a></li>
+							<li class="text-nowrap"><a href="#" class="btn btn-sm course-btn ">🖌️藝術創作</a></li>
+						</ul>
+						<a href="#" class="btn btn-primary">更多募資課程</a>
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="row row-cols-lg-2 row-cols-1">
+							<div class="col">
+
+								<div class="card p-0 shadow position-relative rounded-20 border-0 overflow-hidden mb-0">
+									<span class="tag fs-14 position-absolute m-16">優惠倒數 10 天</span>
+									<img src="../assets/images/course-5.png" class="card-img-top h-100" alt="course">
+									<div class="card-body">
+										<h6 class="card-title mb-16 text-black">小白也會！從零開始學習 Python 程式設計</h6>
+										<div class="d-flex">
+											<div class="d-flex align-items-center me-auto">
+												<div class="flex-shrink-0">
+													<img src="../assets/images/avatar-2.png" alt="avatar logo"
+														class="rounded-circle object-fit-cover">
+												</div>
+												<div class="flex-grow-1 ms-8">
+													<p>Kelly Hsu</p>
+												</div>
+											</div>
+											<div class="d-flex flex-column align-items-end">
+												<span class="d-block fs-6 fw-bolder  text-primary-100">NT$
+													2,480</span>
+												<small class="text-decoration-line-through fs-14 text-neutral-60">NT$
+													3,200</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-footer p-16 d-flex align-items-center bg-white">
+										<div class="me-auto">
+											<span
+												class="d-inline-block rounded-pill bg-neutral-40 px-12 py-4 fs-14">程式開發</span>
+											<p class="fs-14 mt-4">已有 420 位同學加入</p>
+										</div>
+										<p class="fs-14 text-black">
+											<i class="bi bi-star-fill text-warning me-4"></i>4.0
+											<span class="text-neutral-60">(333)</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card p-0 shadow position-relative rounded-20 border-0 overflow-hidden mb-0">
+									<span class="sale fs-14 position-absolute m-16">限時 8 折 🔥</span>
+									<img src="../assets/images/course-5.png" class="card-img-top h-100" alt="course">
+									<div class="card-body">
+										<h6 class="card-title mb-16 text-black">小白也會！從零開始學習 Python 程式設計</h6>
+										<div class="d-flex">
+											<div class="d-flex align-items-center me-auto">
+												<div class="flex-shrink-0">
+													<img src="../assets/images/avatar-2.png" alt="avatar logo"
+														class="rounded-circle object-fit-cover">
+												</div>
+												<div class="flex-grow-1 ms-8">
+													<p>Kelly Hsu</p>
+												</div>
+											</div>
+											<div class="d-flex flex-column align-items-end">
+												<span class="d-block fs-6 fw-bolder  text-primary-100">NT$
+													2,480</span>
+												<small class="text-decoration-line-through fs-14 text-neutral-60">NT$
+													3,200</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-footer p-16 d-flex align-items-center bg-white">
+										<div class="me-auto">
+											<span
+												class="d-inline-block rounded-pill bg-neutral-40 px-12 py-4 fs-14">程式開發</span>
+											<p class="fs-14 mt-4">已有 420 位同學加入</p>
+										</div>
+										<p class="fs-14 text-black">
+											<i class="bi bi-star-fill text-warning me-4"></i>4.0
+											<span class="text-neutral-60">(333)</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- 看看大家都買什麼 -->
+			<section class="top-buy pt-80 pt-md-120 pb-40">
+				<div class="container">
+					<h2 class="fs-1 text-black text-md-center fw-bolder mb-8">
+						<span class="text-flower">看看大家
+							<span class="d-block d-md-none mb-8"></span>都買了什麼
+						</span>
+					</h2>
+					<p class="fs-6 text-md-center mb-24 mb-md-40">熱銷課程一次看！✨</p>
+					<%- include('./components/subject'); -%>
+				</div>
+			</section>
+			<%- include('./layout/category'); -%>
+				<!-- 頂尖講師帶你飛 -->
+				<section class="top-teacher">
+					<div class="container pt-80 pt-md-120 pb-120 pb-md-160">
+						<h2 class="fs-1 text-black text-md-center fw-bolder mb-8">
+							<span class="text-flower">頂尖講師
+								<span class="d-block d-md-none mb-8"></span>帶你飛
+							</span>
+						</h2>
+						<p class="fs-6 fs-md-16 text-md-center mb-24 mb-md-40">超真實學員評價，這些講師你絕對不能錯過！</p>
+						<div class="swiper top-teacher-swiper">
+							<div class="swiper-wrapper mb-32">
+								<div class="swiper-slide w-auto">
+									<div class="card border-0 bg-transparent">
+										<img src="../assets/images/teacher-3.png"
+											class="card-img-top ms-60 ms-md-80 w-auto" alt="teacher-3">
+										<div class="card-body p-24 rounded-20 shadow bg-white">
+											<h6 class="text-black pb-24">Mr. Robert</h6>
+											<p class="fs-14 text-black mb-8">
+												<span
+													class="d-inline-block rounded-pill bg-neutral-40 px-12 py-8 fs-14 fw-bold">音樂創作</span>
+												<i class="bi bi-star-fill text-warning ms-8"></i>4.0
+												<span class="text-neutral-60">(333)</span>
+											</p>
+											<p class="card-text pb-24 fs-14 fs-md-16">Robert
+												的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。
+											</p>
+											<a href="#" class="btn btn-primary d-block border-0">探索 Mr. Robert 的教學課程</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide w-auto">
+									<div class="card border-0 bg-transparent">
+										<img src="../assets/images/teacher-1.png"
+											class="card-img-top ms-60 ms-md-80 w-auto" alt="teacher-1">
+										<div class="card-body p-24 rounded-20 shadow bg-white">
+											<h6 class="text-black pb-24">Kelly Beck</h6>
+											<p class="fs-14 text-black mb-8">
+												<span
+													class="d-inline-block rounded-pill bg-neutral-40 px-12 py-8 fs-14 fw-bold">英文寫作</span>
+												<i class="bi bi-star-fill text-warning ms-8"></i>4.8
+												<span class="text-neutral-60">(281)</span>
+											</p>
+											<p class="card-text pb-24 fs-14 fs-md-16">Kelly
+												的教學方式靈活且富有創意，能夠有效提升學生的寫作技巧和自信心。Kelly 注重實用性，針對學生的需求量身打造教學內容，並提供具體的反饋和建議。
+											</p>
+											<a href="#" class="btn btn-primary d-block border-0">探索 Kelly Beck 的教學課程</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide w-auto">
+									<div class="card border-0 bg-transparent">
+										<img src="../assets/images/teacher-2.png"
+											class="card-img-top ms-60 ms-md-80 w-auto object-fit-cover" alt="teacher-2">
+										<div class="card-body p-24 rounded-20 shadow bg-white">
+											<h6 class="text-black pb-24">K. Lee</h6>
+											<p class="fs-14 text-black mb-8">
+												<span
+													class="d-inline-block rounded-pill bg-neutral-40 px-12 py-8 fs-14 fw-bold">音樂創作</span>
+												<i class="bi bi-star-fill text-warning ms-8"></i>4.8
+												<span class="text-neutral-60">(1.245)</span>
+											</p>
+											<p class="card-text pb-24 fs-14 fs-md-16">K. Lee
+												的教學風格親切且耐心，能夠循序漸進地引導學生進入樂團的世界。學生們紛紛表示，K. Lee 的課程讓他們對音樂產生了濃厚的興趣！
+											</p>
+											<a href="#" class="btn btn-primary d-block border-0">探索 K. Lee 的教學課程</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination d-block"></div>
+						</div>
+					</div>
+				</section>
 		</main>
-	<%- include('./layout/footer'); -%>
-	<script type="module" src="../main.js"></script>
+		<%- include('./layout/footer'); -%>
+			<script type="module" src="../main.js"></script>
 </body>
 
 </html>

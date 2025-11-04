@@ -1,0 +1,32 @@
+.swiper {
+    .swiper-slide {
+        width: 306px;
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+
+        &-bullet-active {
+            width: 24px;
+            border-radius: 50px;
+            background: $primary-100;
+            bottom: 0;
+        }
+
+        span {
+            vertical-align: bottom;
+        }
+
+        @include pad() {
+            display: none;
+        }
+    }
+}
+
+.swiper-btn {
+    color: $neutral-60;
+
+    &:hover {
+        color: $primary-100;
+    }
+}

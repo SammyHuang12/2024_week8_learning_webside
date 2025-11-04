@@ -71,13 +71,25 @@ main{
     }
 }
 
-.swiper{
-    .swiper-slide{
-        width: 306px;
+.course{
+    &-btn.active{
+        background: $primary-100;
+        color:$white;
+    }        
+
+    &-btn{
+        color:$neutral-80;
+        background: $white;
+        border: 1px solid $neutral-40;
+        font-weight: normal;
+        &:hover{
+            background-color: $primary-100;
+            border: 1px solid $primary-100;
+            color:white;
+        }
     }
 }
 
-
-// .container{
-//     outline: 1px solid green;
-// }
+.container{
+    // outline: 1px solid green;
+}

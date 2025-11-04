@@ -1,0 +1,15 @@
+.subject {
+    .subject-swiper {
+
+        &~.swiper-prev,
+        &~.swiper-next {
+            background: #fff;
+            color: $primary-100;
+
+            &:hover {
+                background: $primary-100;
+                color: #fff;
+            }
+        }
+    }
+}

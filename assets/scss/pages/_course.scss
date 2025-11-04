@@ -66,23 +66,6 @@
         }
     }
 
-    &-btn.active{
-        background: $primary-100;
-        color:$white;
-    }        
-
-    &-btn{
-        color:$neutral-80;
-        background: $white;
-        border: 1px solid $neutral-40;
-        font-weight: normal;
-        &:hover{
-            background-color: $primary-100;
-            border: 1px solid $primary-100;
-            color:white;
-        }
-    }
-
     .nav-link.active{
         font-weight: $font-weight-bold;
     }
@@ -127,22 +110,6 @@
             }
         }
 
-        .swiper-prev, .swiper-next{
-            background: $white;
-            color: $primary-100;
-            &:hover{
-                background: $primary-100;
-                color:$white;
-            }
-        }
-
-        .swiper-btn{
-            color:$neutral-60;
-            &:hover{
-                color:$primary-100;
-            }
-        }
-
         .topics{
             width: 196px;
             border:1px solid $neutral-40;
@@ -159,41 +126,7 @@
                 }               
             }            
         }
-
-        .swiper-pagination{
-            bottom:0;
-        
-            &-bullet-active{
-                width: 24px;
-                border-radius: 50px;
-                background: $primary-100;
-                bottom:0;
-            }
-
-            span{
-                vertical-align: bottom;
-            }
-
-            @include pad(){
-                display: none;
-            }    
-        }
-        .point{
-            width: 8px;
-            height: 8px;
-            border-radius: 100px;
-            background: #ECECEC;
-            &:hover{
-                   background: $primary-100;
-            }
-        }
-
-        .point.active{
-            width: 24px;
-            height: 8px;
-            border-radius: 50px;
-            background: $primary-100;
-        }        
+    
     }
 
 
